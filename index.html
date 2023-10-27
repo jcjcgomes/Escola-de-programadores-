@@ -12,31 +12,39 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
+<STYLE>
+    A {
+        text-decoration: none;
+    }
+</STYLE>
+
 <body id="page-top">
     <section>
         <div class="menuprincipal" display="flex">
             <ul>
-                <li class="logo"><img width="40px" heigth="40px" src="img/teste_dev.jpg" alt="imagem que contem linhas de códigos"></li>
-                <li class="nametop"><a class="barraNav" href="#page-top">João Carlos</a></li>
-                <li><a href="#curriculo">Curriculo</a></li>
-                <li><a href="#sobremim">Sobre Mim</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li style="float:left"><img class="logo" width="40px" heigth="40px" src="img/teste_dev.jpg"
+                        alt="imagem que contem linhas de códigos"></li>
+                <li style="float:left"><a class="nametop" href="#page-top">João Carlos</a></li>
+                <li style="float:right"><a href="#contato">Contato</a></li>
+                <li style="float:right"><a href="#sobremim">Sobre Mim</a></li>
+                <li style="float:right"><a href="#curriculo">Curriculo</a></li>
             </ul>
         </div>
     </section>
 
-    <section class="masterhead bg-primary text-black text-center">
-        <div class="container d-flex align-items-center flex-column">
-            <img class="avatarPerfil" src="img/avatar.png" alt="foto do perfil do autor">
-            <h1 class="master-heading text-uppercase">JOÃO CARLOS</h1>
+    <section class="perfil">
+        <div>
+            <img class="avatarperfil" src="img/avatar.png" alt="foto do perfil do autor">
+            <h1 class="nomeAutor">JOÃO CARLOS</h1>
         </div>
         <div class="dividerCustom">
             <div class="line-custom"></div>
             <div class="circle-custom"></div>
             <div class="line-custom"></div>
         </div>
+        <h2 class="cargo">Análise e Desenvolvimento de Sistemas</h2>
         <div id="curriculo" class="containerCurriculo">
-            <h2 class="page-section-heading text-center text-uppercase text-secondary">Curriculo</h2>
+            <h2 class="namecurriculo">Currículo</h2>
             <div class="dividerCustom">
                 <div class="line-custom"></div>
                 <div class="circle-custom"></div>
@@ -47,30 +55,36 @@
     </section>
 
     <section>
-        <div class="page-section bg-primary text-white" id="sobreMim" class="containerSobreMim">
-            <h2 class="page-section-heading text-center text-uppercase text-white">Sobre mim</h2>
+        <div class="sobreMim" id="sobremim" class="containerSobreMim">
+            <h2 class="namesobre">Sobre mim</h2>
             <div class="dividerCustom">
                 <div class="line-custom"></div>
                 <div class="circle-custom"></div>
                 <div class="line-custom"></div>
             </div>
-            <div class="col-lg-4 ms-auto">
-                <h3 class="lead">Olá me chamo João carlos, sou graduando em analise e desenvolvimento de sistema na
+            <div class="textsobre">
+                <h3>Olá me chamo João carlos, sou graduando em analise e desenvolvimento de sistema na
                     Unintese e realizando curso Java na Udemy para aperfeiçoamento na área.</h3>
             </div>
         </div>
     </section>
 
     <section>
-        <div class="page-section bg-primary text-white" id="cotato" class="containerContato">
-            <h2 class="page-section-heading text-center text-uppercase text-white">Contato</h2>
-            <div class="line-custom"></div>
-            <div class="circle-custom"></div>
-            <div class="line-custom"></div>
-            <a href="https://instagram.com/jcgomes_trainer?igshid=NzZlODBkYWE4Ng==">Instagram</a>
-            <a href="https://wa.link/k8cy77">WhatsApp</a>
-            <img class="linkWhats" src="img/whats.png" alt="Qr code para o WhatsApp">
-            <a href="mailto:jccjgomes@hotmail.com?subject=Dev JC&body=Obrigado pelo contato!" title="">Outlook</a>
+        <div class="contato" id="contato" class="containerContato">
+            <h2 class="namecontato">Contato</h2>
+            <div class="dividerCustom">
+                <div class="line-custom"></div>
+                <div class="circle-custom"></div>
+                <div class="line-custom"></div>
+            </div>
+        </div>     
+        <div class="footer">   
+            <ul>
+                <li><a class="insta" href="https://instagram.com/jcgomes_trainer?igshid=NzZlODBkYWE4Ng==">Instagram</a></li>
+                <li><a class="namewhats" href="https://wa.link/k8cy77">WhatsApp</a></li>
+                <li><img class="linkWhats" src="img/whats.png" alt="Qr code para o WhatsApp"></li>
+                <li><a class="email" href="mailto:jccjgomes@hotmail.com?subject=Dev JC&body=Obrigado pelo contato! Em que posso lhe ajudar?" title="">Outlook</a></li>
+            </ul>
         </div>
     </section>
 
