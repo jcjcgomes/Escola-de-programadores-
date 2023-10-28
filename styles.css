@@ -1,85 +1,18 @@
-:root {
-  --bs-blue: #0d6efd;
-  --bs-indigo: #6610f2;
-  --bs-purple: #6f42c1;
-  --bs-pink: #d63384;
-  --bs-red: #dc3545;
-  --bs-orange: #fd7e14;
-  --bs-yellow: #ffc107;
-  --bs-green: #198754;
-  --bs-teal: #1abc9c;
-  --bs-cyan: #0dcaf0;
-  --bs-black: #000;
-  --bs-white: #fff;
-  --bs-gray: #6c757d;
-  --bs-gray-dark: #343a40;
-  --bs-gray-100: #f8f9fa;
-  --bs-gray-200: #e9ecef;
-  --bs-gray-300: #dee2e6;
-  --bs-gray-400: #ced4da;
-  --bs-gray-500: #adb5bd;
-  --bs-gray-600: #6c757d;
-  --bs-gray-700: #495057;
-  --bs-gray-800: #343a40;
-  --bs-gray-900: #212529;
-  --bs-primary: #1abc9c;
-  --bs-secondary: #2c3e50;
-  --bs-success: #198754;
-  --bs-info: #0dcaf0;
-  --bs-warning: #ffc107;
-  --bs-danger: #dc3545;
-  --bs-light: #f8f9fa;
-  --bs-dark: #212529;
-  --bs-primary-rgb: 26, 188, 156;
-  --bs-secondary-rgb: 44, 62, 80;
-  --bs-success-rgb: 25, 135, 84;
-  --bs-info-rgb: 13, 202, 240;
-  --bs-warning-rgb: 255, 193, 7;
-  --bs-danger-rgb: 220, 53, 69;
-  --bs-light-rgb: 248, 249, 250;
-  --bs-dark-rgb: 33, 37, 41;
-  --bs-white-rgb: 255, 255, 255;
-  --bs-black-rgb: 0, 0, 0;
-  --bs-body-color-rgb: 33, 37, 41;
-  --bs-body-bg-rgb: 255, 255, 255;
-  --bs-font-sans-serif: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-  --bs-body-font-family: var(--bs-font-sans-serif);
-  --bs-body-font-size: 1rem;
-  --bs-body-font-weight: 400;
-  --bs-body-line-height: 1.5;
-  --bs-body-color: #212529;
-  --bs-body-bg: #fff;
-  --bs-border-width: 0.125rem;
-  --bs-border-style: solid;
-  --bs-border-color: #dee2e6;
-  --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
-  --bs-border-radius: 0.5rem;
-  --bs-border-radius-sm: 0.25rem;
-  --bs-border-radius-lg: 0.75rem;
-  --bs-border-radius-xl: 1rem;
-  --bs-border-radius-2xl: 2rem;
-  --bs-border-radius-pill: 50rem;
-  --bs-link-color: #1abc9c;
-  --bs-link-hover-color: #15967d;
-  --bs-code-color: #d63384;
-  --bs-highlight-bg: #fff3cd;
-}
-
 @media (prefers-reduced-motion: no-preference) {
   :root {
     scroll-behavior: smooth;
   }
 }
 
+body {
+  background-color: #40579e;
+}
+
 ul {
   list-style-type: none;
   margin: 3px;
   padding: 2px;
-  overflow: hidden;
-  width: 98%;
-
+  
 }
 
 li {
@@ -87,18 +20,19 @@ li {
   padding: 1px;
   margin-right: 10px;
   margin-top: 0px;
+  
 }
 
 li:link {
-text-decoration: none;
+  text-decoration: none;
 }
 
 li a:hover {
-  background-color: #6e6e6ecc;
+  color: #ffffff;
 }
 
 li a:visited {
-  color: rgb(54, 64, 196);
+  color: #ffffff;
 }
 
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
@@ -126,7 +60,8 @@ h1, .h1 {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   border-radius: 8px;
   font-size: 20px;
-}
+  text-align: right;
+  }
 
 .logo {
   border-radius: 25%;
@@ -188,25 +123,113 @@ h1, .h1 {
   font-size: 30px;
 }
 
-.footer{
-  padding-top: 50px;
-  display: block;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight: 800;
+.linkcontato {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 700;
   font-size: 25px;
   align-items: center;
-  margin-bottom: 100px;
-  margin-left: 0%;
-  margin-right: 0%;
-  -webkit-text-fill-color: #000000;
   text-align: center;
   
-  }
+}
 
-.linkWhats{
+.insta {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  color: #FFFFFF;
+  font-family: Trebuchet MS;
+  font-size: 40px;
+  font-weight: 100;
+  padding: 25px;
+  background-color: #3A529B;
+  -webkit-box-shadow: 1px 1px 20px 0 #000000;
+  -moz-box-shadow: 1px 1px 20px 0 #000000;
+  box-shadow: 1px 1px 20px 0 #000000;
+  text-shadow: 0 0 21px #000000;
+  border: solid #000000 1px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+
+.insta:hover {
+  background: #1E62D0;
+  border: solid #000000 1px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.namewhats {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  color: #FFFFFF;
+  font-family: Trebuchet MS;
+  font-size: 40px;
+  font-weight: 100;
+  padding: 25px;
+  background-color: #3A529B;
+  -webkit-box-shadow: 1px 1px 20px 0 #000000;
+  -moz-box-shadow: 1px 1px 20px 0 #000000;
+  box-shadow: 1px 1px 20px 0 #000000;
+  text-shadow: 0 0 21px #000000;
+  border: solid #000000 1px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+
+.namewhats:hover {
+  background: #1E62D0;
+  border: solid #000000 1px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.linkWhats {
   width: 75px;
-  }
+  margin-top: 20px;
+}
 
+.email {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  color: #FFFFFF;
+  font-family: Trebuchet MS;
+  font-size: 40px;
+  font-weight: 100;
+  padding: 25px;
+  background-color: #3A529B;
+  -webkit-box-shadow: 1px 1px 20px 0 #000000;
+  -moz-box-shadow: 1px 1px 20px 0 #000000;
+  box-shadow: 1px 1px 20px 0 #000000;
+  text-shadow: 0 0 21px #000000;
+  border: solid #000000 1px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+
+.email:hover {
+  background: #1E62D0;
+  border: solid #000000 1px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.qrcode{
+  text-align: center;
+}
 
 .dividerCustom {
   margin: 1.25rem 0 1.5rem;
@@ -233,4 +256,94 @@ h1, .h1 {
   background-color: black;
   border-radius: 100%;
 
+}
+
+.butoncontato {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  color: #FFFFFF;
+  font-family: Tahoma;
+  font-size: 17px;
+  font-weight: 800;
+  padding: 7px;
+  background-color: #000000;
+  -webkit-box-shadow: 1px 1px 8px 0 #FFFFFF;
+  -moz-box-shadow: 1px 1px 8px 0 #FFFFFF;
+  box-shadow: 1px 1px 8px 0 #FFFFFF;
+  text-shadow: 0 0 21px #000000;
+  border: solid #000000 1px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+
+.butoncontato:hover {
+  background: #1E62D0;
+  border: solid #000000 1px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.butonsobremim {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  color: #FFFFFF;
+  font-family: Tahoma;
+  font-size: 17px;
+  font-weight: 800;
+  padding: 7px;
+  background-color: #000000;
+  -webkit-box-shadow: 1px 1px 8px 0 #FFFFFF;
+  -moz-box-shadow: 1px 1px 8px 0 #FFFFFF;
+  box-shadow: 1px 1px 8px 0 #FFFFFF;
+  text-shadow: 0 0 21px #000000;
+  border: solid #000000 1px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+
+.butonsobremim:hover {
+  background: #1E62D0;
+  border: solid #000000 1px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.butoncurriculo {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  color: #FFFFFF;
+  font-family: Tahoma;
+  font-size: 17px;
+  font-weight: 800;
+  padding: 7px;
+  background-color: #000000;
+  -webkit-box-shadow: 1px 1px 8px 0 #FFFFFF;
+  -moz-box-shadow: 1px 1px 8px 0 #FFFFFF;
+  box-shadow: 1px 1px 8px 0 #FFFFFF;
+  text-shadow: 0 0 21px #000000;
+  border: solid #000000 1px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+
+.butoncurriculo:hover {
+  background: #1E62D0;
+  border: solid #000000 1px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  text-decoration: none;
 }
