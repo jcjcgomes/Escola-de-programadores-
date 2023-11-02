@@ -12,11 +12,11 @@ ul {
   list-style-type: none;
   margin: 3px;
   padding: 2px;
-  
+  display: flex;
 }
 
 li {
-  display: inline;
+  
   padding: 1px;
   margin-right: 10px;
   margin-top: 0px;
@@ -61,7 +61,12 @@ h1, .h1 {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   border-radius: 8px;
   font-size: 20px;
-  text-align: right;
+  
+  }
+
+  .topboton{
+    display: flex;
+    justify-content: space-around;
   }
 
 .logo {
@@ -84,6 +89,7 @@ h1, .h1 {
 
 .nametop {
   font-size: 25px;
+  
  }
 
 
@@ -193,6 +199,7 @@ h1, .h1 {
 
 }
 
+
 .butoncontato, .butoncurriculo, .butonsobremim {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -208,12 +215,16 @@ h1, .h1 {
   box-shadow: 1px 1px 8px 0 #000000;
   border: solid #000000 1px;
   text-decoration: none;
-  display: inline-block;
+  display: flex;
   cursor: pointer;
   text-align: center;
-}
+  }
+  
+  .butoncurriculo{
+    
+  }
 
-.butoncontato:hover, .butoncurriculo:hover, .butonsobremim:hover {
+  .butoncontato:hover, .butoncurriculo:hover, .butonsobremim:hover {
   background: #7890a8;
   border: solid #000000 1px;
   -webkit-border-radius: 10px;
