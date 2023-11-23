@@ -57,16 +57,17 @@ h1, .h1 {
   right: 0px;
   left: 0px;
   top: 0px;
-  text-decoration: #000;
   font-weight: 900;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   border-radius: 8px;
   font-size: 20px;
+  display: flex;
 }
+
 
 .topboton {
   display: flex;
-  justify-content: left;
+  align-items: center;
 }
 
 .topboton a {
@@ -79,6 +80,7 @@ h1, .h1 {
 }
 
 .logo {
+  width: 50px;
   border-radius: 25%;
 }
 
@@ -99,7 +101,10 @@ h1, .h1 {
 
 .nametop {
   font-size: 25px;
-
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-right: auto;
+  color: #fff;
 }
 
 
@@ -158,10 +163,11 @@ h1, .h1 {
   justify-content: space-evenly;
 }
 
-.linkcontato a:hover{
+.linkcontato a:hover {
   transform: scale(1.4);
   transition: 0.3s
 }
+
 .insta, .namewhats, .email {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -219,7 +225,7 @@ h1, .h1 {
 }
 
 
-.butoncontato, .butoncurriculo, .butonsobremim {
+.butontop {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
@@ -234,16 +240,12 @@ h1, .h1 {
   box-shadow: 1px 1px 8px 0 #000000;
   border: solid #000000 1px;
   text-decoration: none;
-  display: flex;
+  display: inline-block;
   cursor: pointer;
   text-align: center;
 }
 
-.butoncurriculo {
-  margin-left: auto;
-}
-
-.butoncontato:hover, .butoncurriculo:hover, .butonsobremim:hover {
+.butontop:hover{
   background: #7890a8;
   border: solid #000000 1px;
   -webkit-border-radius: 10px;
@@ -252,9 +254,66 @@ h1, .h1 {
   text-decoration: none;
 }
 
-@media (max-width: 480px) {
+.hamburguer {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 28px;
+  height: 3px;
+  border-radius: 2px;
+  margin: 5px auto;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+
+@media (max-width: 767px) {
+  .hamburguer {
+    display: block;
+  }
+
+  .hamburguer.active .bar:nth-child(2){
+    opacity: 0;
+  }
+
+  .hamburguer.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburguer.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .topboton {
+    position: fixed;
+    left: -110%;
+    top: 52px;
+    gap: 0;
+    border-radius: 0 0 20px 20px;
+    background-color: #240047;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+    transition: 0.3s;
+
+  }
+
+  .butontop {
+    margin: 10px 10px 10px 0;
+    width: 90%;
+  }
+
+  .topboton.active {
+    left: 0;
+
+  }
+
   .linkcontato {
     display: flex;
     flex-direction: column;
   }
+
 }
